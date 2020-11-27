@@ -11,6 +11,7 @@
 <body>
     <div class="overall-container">
         <nav class="nav">
+            <i class="nav__menu-btn fa fa-bars"></i>
             <span class="nav__github-logo iconify" data-icon="octicon:mark-github-16" data-inline="false"></span>
             <div class="nav-search-items-container">
                 <div class="search">
@@ -20,13 +21,13 @@
                 <ul class="nav-items">
                     <!-- <li class="nav-items__dashboard">Dashboard</li> -->
                     <li class="nav-items__pull-requests">Pull requests</li>
-                    <!-- <li class="nav-items__pulls">Pulls</li> -->
+                    <li class="nav-items__pulls">Pulls</li>
                     <li class="nav-items__issues">Issues</li>
                     <li class="nav-items__marketplace">Marketplace</li>
                     <li class="nav-items__explore">Explore</li>
                     <!-- <li class="nav-items__settings">Settings</li> -->
                 </ul>                
-            </div>
+            </div> 
             
             <div class="nav-options">
                 <span class="nav__notification">
@@ -45,50 +46,79 @@
             </div>
         </nav>
 
-        <main class="main-container">
-            <nav class="main-nav">
-                <div class="main-nav-user">
+        <!-- mobile nav menu -->
+        <section class="mobile-nav-container">
+            <div class="search mobile-search">
+                <input type="text" class="search__bar mobile-search__bar" placeholder="Search or jump to...">
+                <span class="search__key-slash mobile-search__key-slash">/</span><hr>
+            </div> 
+
+            <ul class="nav-items mobile-nav-items">
+                <li class="nav-items__dashboard">Dashboard</li>
+                <li class="nav-items__pull-requests">Pull requests</li> <hr>
+                <li class="nav-items__pulls">Pulls</li> <hr>
+                <li class="nav-items__issues">Issues</li> <hr>
+                <li class="nav-items__marketplace">Marketplace</li> <hr>
+                <li class="nav-items__explore">Explore</li> <hr>
+                <li class="nav-items__settings">Settings</li> <hr>
+                <li class="main-nav-user mobile-nav-user">
                     <img src="images/naru.jpeg" alt="user-avatar">
-                    <p><strong>NARUDESIGNS</strong></p>
-                </div>
+                    <p><strong>NARUDESIGNS</strong></p> 
+                </li> <hr>
+                <li class="nav-items__settings">
+                    <span class="iconify logout-icon" data-icon="octicon:sign-out-16" data-inline="false"></span>
+                    Sign out
+                </li>
+            </ul>             
+        </section>
 
-                <ul class="main-nav__items-container">
-                    <li class="main-nav-items">
-                        <span class="main-nav-items__overview iconify" data-icon="octicon:book-16" data-inline="false"></span>
-                        <p>Overview</p>
-                    </li>
+        <nav class="main-nav">
+            <div class="main-nav-user">
+                <img src="images/naru.jpeg" alt="user-avatar">
+                <p><strong>NARUDESIGNS</strong></p>
+            </div>
 
-                    <li class="main-nav-items active">
-                        <span class="main-nav-items__repos iconify" data-icon="octicon:repo-16" data-inline="false"></span>
-                        <p>Repositories</p>
-                        <p class="main-nav-items__no-of-repos">21</p>
-                    </li>
+            <ul class="main-nav__items-container">
+                <li class="main-nav-items">
+                    <span class="main-nav-items__overview iconify" data-icon="octicon:book-16" data-inline="false"></span>
+                    <p>Overview</p>
+                </li>
 
-                    <li class="main-nav-items">
-                        <span class="main-nav-items__projects iconify" data-icon="octicon:project-16" data-inline="false"></span>
-                        <p>Projects</p>
-                    </li>
+                <li class="main-nav-items active">
+                    <span class="main-nav-items__repos iconify" data-icon="octicon:repo-16" data-inline="false"></span>
+                    <p>Repositories</p>
+                    <p class="main-nav-items__no-of-repos">21</p>
+                </li>
 
-                    <li class="main-nav-items">
-                        <span class="main-nav-items__packages iconify" data-icon="octicon:package-16" data-inline="false"></span>
-                        <p>Packages</p>
-                    </li>
-                </ul>
-            </nav>
+                <li class="main-nav-items">
+                    <span class="main-nav-items__projects iconify" data-icon="octicon:project-16" data-inline="false"></span>
+                    <p>Projects</p>
+                </li>
 
+                <li class="main-nav-items">
+                    <span class="main-nav-items__packages iconify" data-icon="octicon:package-16" data-inline="false"></span>
+                    <p>Packages</p>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-container">
             <section class="main-body">
-                <aside class="profile">
+                <div class="profile">
                     <div class="profile-photo">
                         <img src="images/naru-bg.jpeg" alt="profile-photo">
-                        <span class="profile-photo__status"> <p>Hi</p> </span>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile__name">Paul Ibeabuchi</h1>
+                        <p class="profile__username">NARUDESIGNS</p>                        
                     </div>
 
-                    <h1 class="profile__name">Paul Ibeabuchi</h1>
-                    <p class="profile__username">NARUDESIGNS</p>
-                    <p class="profile__desc">Frontend Developer | UI Designer | Graphics Designer. Javascript Lover 😎</p>
-                </aside>
+                    <span class="profile-photo__status"> <p>Hi</p> </span>
 
-                <div class="main-body-repos">
+                    <p class="profile__desc">Frontend Developer | UI Designer | Graphics Designer. Javascript Lover 😎</p>
+                </div>
+
+                <div class="main-body-repos">              
                     <input type="text" class="main__find-repo" placeholder="Find a repository...">
                     <hr>
     
@@ -125,7 +155,7 @@
                                 </span>
         
                                 <span class="repo-info__update">        
-                                    <p>Updated on</p>
+                                    <p>Updated</p>
                                     <p class="repo-info__update-date">July 2</p>
                                 </span>
                             </div>
@@ -515,9 +545,9 @@
                     </div>
                     <hr>
                 </div>
-
             </section>
         </main>
+
     </div>
     
 
