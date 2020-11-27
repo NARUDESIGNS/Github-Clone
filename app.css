@@ -193,6 +193,7 @@ hr {
     border-bottom: 1px solid var(--very-light-grey);
     padding: 0 var(--general-indent);
     background-color: var(--white);
+    z-index: 5;
 }
 .main-nav-user {
     display: flex;
@@ -273,6 +274,7 @@ hr {
     max-width: 25em;
     max-height: 25em;
     margin-bottom: var(--sm-space);
+    z-index: 10;
     /* border: 1px solid orange; */
 }
 .profile-photo img {
@@ -283,7 +285,6 @@ hr {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    z-index: 11;
 }
 .profile-photo__status {
     display: flex;
@@ -327,7 +328,6 @@ hr {
 .main-body-repos {
     /* border: 1px solid purple; */
     width: 100%;
-    /* z-index: 1; */
 }
 .main__find-repo {
     width: 97%;
@@ -406,7 +406,6 @@ hr {
 .repo-info__update :first-child {
     margin-right: 5px;
     font-size: 16px;
-    z-index: -1;
 }
 .repo-info__update :first-child {
     font-size: 12px;
@@ -442,7 +441,6 @@ hr {
     -o-border-radius: 5px;
     margin-left: auto;
     font-weight: 600;
-    z-index: -1;
 }
 .repo-container__btn:hover {
     background-color: #f3f4f6;
@@ -451,4 +449,13 @@ hr {
     font-size: 14px;
     margin-right: 5px;
     color: #586069;
+}
+
+
+
+
+
+/* ==================== Mobile View ==================== */
+@media only screen and (max-width: 800px){
+    
 }
