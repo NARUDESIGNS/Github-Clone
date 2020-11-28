@@ -10,6 +10,7 @@
 </head>
 <body>
     <div class="overall-container">
+        <!-- TOP NAVIGATION -->
         <nav class="nav">
             <span class="nav__menu-btn iconify" data-icon="octicon:three-bars-16" data-inline="false"></span>
             <span class="nav__github-logo iconify" data-icon="octicon:mark-github-16" data-inline="false"></span>
@@ -72,12 +73,14 @@
             </ul>             
         </section>
 
+        <!-- MAIN NAVIGATION - Overview | Repositorues | Projects | Packages -->
         <nav class="main-nav">
+            <!-- Fading user avatar | username -->
             <div class="main-nav-user">
                 <img src="images/naru.jpeg" alt="user-avatar">
                 <p><strong>NARUDESIGNS</strong></p>
             </div>
-
+            
             <ul class="main-nav__items-container">
                 <li class="main-nav-items">
                     <span class="main-nav-items__overview iconify" data-icon="octicon:book-16" data-inline="false"></span>
@@ -102,488 +105,494 @@
             </ul>
         </nav>
 
-        <main class="main-container">
-            <section class="main-body">
-                <div class="profile">
-                    <div class="profile-photo">
-                        <img src="images/naru-bg.jpeg" alt="profile-photo">
-                    </div>
-                    <div class="profile-info">
-                        <h1 class="profile__name">Paul Ibeabuchi</h1>
-                        <p class="profile__username">NARUDESIGNS</p>                        
-                    </div>
-                    <span class="profile-photo__status"> <p>Hi</p> </span>
-                    <p class="profile__desc">Frontend Developer | UI Designer | Graphics Designer. Javascript Lover 😎</p>
-                    <button class="edit-profile-btn">Edit Profile</button>
-
-                    <section class="other-profile-info">
-                        <span class="followers">
-                            <span class="iconify" data-icon="octicon:people-16" data-inline="false"></span>
-                            <span class="followers-count">5</span> followers <span class="dot-separator">.</span> </span>
-                        </span>
-
-                        <span class="following">
-                            <span class="following-count">125</span> following <span class="dot-separator">.</span>
-                        </span>
-                        
-                        <span class="total-stars">
-                            <span class="iconify" data-icon="octicon:star-16" data-inline="false"></span>
-                            <span class="total-star-count">20</span>
-                        </span>
-                    </section>
-                    <section class="website-link">
-                        <span class="iconify" data-icon="octicon:link-16" data-inline="false"></span>
-                        <a href="#web-link">https://narudesigns.netlify.app</a>
-                    </section>
-
-                    <section class="twitter-link">
-                        <span class="iconify" data-icon="bytesize:twitter" data-inline="false"></span>
-                        <span>@paulister007</span>
-                    </section>
+        <!-- MAIN BODY -->
+        <main class="main-body">
+            <!-- Profile Details -->
+            <div class="profile">
+                <div class="profile-photo">
+                    <img src="images/naru-bg.jpeg" alt="profile-photo">
                 </div>
-
-                <div class="main-body-repos">
-                    <section class="find-repo-filter-container">
-                        <input type="text" class="main__find-repo" placeholder="Find a repository...">
-                        <div class="filter-btns-container">
-                            <button class="filter-btns type">Type: All <i class="fa fa-caret-down"></i> </button>
-                            <button class="filter-btns type">Language: All <i class="fa fa-caret-down"></i> </button>
-                            <button class="new-repo-btn type">
-                                <span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>
-                                New
-                            </button>
-                        </div>                        
-                    </section>              
-
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
-    
-                    <div class="repo-container">
-                        <section class="repo">
-                            <h3 class="repo__name">theBigDot</h3>
-                            <p class="repo__desc">clock</p>
-                            <div class="topics-container">
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">watch</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">clock</p>
-                                </span>
-                                <span class="topics-container__topics">
-                                    <p class="topics-container__topics-title">time</p>
-                                </span>
-                            </div>
-        
-                            <div class="repo-info">
-                                <span class="repo-info__language">
-                                    <span class="repo-info__language-color"></span>             
-                                    <p class="repo-info__language-name">Javascript</p>
-                                </span>
-        
-                                <span class="repo-info__stargazers">
-                                    <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
-                                    <p class="repo-info__stargazers-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__forks">
-                                    <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
-                                    <p class="repo-info__forks-count">5</p>
-                                </span>
-        
-                                <span class="repo-info__update">        
-                                    <p>Updated on</p>
-                                    <p class="repo-info__update-date">July 2</p>
-                                </span>
-                            </div>
-                        </section>
-    
-                        <button class="repo-container__btn">
-                            <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
-                            <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
-                            Star
-                        </button>
-                    </div>
-                    <hr>
+                <div class="profile-info">
+                    <h1 class="profile__name">Paul Ibeabuchi</h1>
+                    <p class="profile__username">NARUDESIGNS</p>                        
                 </div>
-            </section>
+                <span class="profile-photo__status"> <p>Hi</p> </span>
+                <p class="profile__desc">Frontend Developer | UI Designer | Graphics Designer. Javascript Lover 😎</p>
+                <button class="edit-profile-btn">Edit Profile</button>
+
+                <section class="other-profile-info">
+                    <span class="followers">
+                        <span class="iconify" data-icon="octicon:people-16" data-inline="false"></span>
+                        <span class="followers-count">5</span> followers <span class="dot-separator">.</span> </span>
+                    </span>
+
+                    <span class="following">
+                        <span class="following-count">125</span> following <span class="dot-separator">.</span>
+                    </span>
+                    
+                    <span class="total-stars">
+                        <span class="iconify" data-icon="octicon:star-16" data-inline="false"></span>
+                        <span class="total-star-count">20</span>
+                    </span>
+                </section>
+                <section class="website-link">
+                    <span class="iconify" data-icon="octicon:link-16" data-inline="false"></span>
+                    <a href="#web-link">https://narudesigns.netlify.app</a>
+                </section>
+
+                <section class="twitter-link">
+                    <span class="iconify" data-icon="bytesize:twitter" data-inline="false"></span>
+                    <span>@paulister007</span>
+                </section>
+            </div>
+
+            <!-- Repositories -->
+            <div class="main-body-repos">
+                <section class="find-repo-filter-container">
+                    <input type="text" class="main__find-repo" placeholder="Find a repository...">
+                    <div class="filter-btns-container">
+                        <button class="filter-btns type">Type: All <i class="fa fa-caret-down"></i> </button>
+                        <button class="filter-btns type">Language: All <i class="fa fa-caret-down"></i> </button>
+                        <button class="new-repo-btn type">
+                            <span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>
+                            New
+                        </button>
+                    </div>                        
+                </section>              
+
+                <hr>
+
+                <!-- Individual Repositories Details -->
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+                <div class="repo-container">
+                    <section class="repo">
+                        <h3 class="repo__name">theBigDot</h3>
+                        <p class="repo__desc">clock</p>
+                        <div class="topics-container">
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">watch</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">clock</p>
+                            </span>
+                            <span class="topics-container__topics">
+                                <p class="topics-container__topics-title">time</p>
+                            </span>
+                        </div>
+    
+                        <div class="repo-info">
+                            <span class="repo-info__language">
+                                <span class="repo-info__language-color"></span>             
+                                <p class="repo-info__language-name">Javascript</p>
+                            </span>
+    
+                            <span class="repo-info__stargazers">
+                                <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
+                                <p class="repo-info__stargazers-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__forks">
+                                <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
+                                <p class="repo-info__forks-count">5</p>
+                            </span>
+    
+                            <span class="repo-info__update">        
+                                <p>Updated on</p>
+                                <p class="repo-info__update-date">July 2</p>
+                            </span>
+                        </div>
+                    </section>
+
+                    <button class="repo-container__btn">
+                        <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span> 
+                        <!-- <span class="repo-info__stargazers-icon--filled iconify" data-icon="octicon:star-fill-16" data-inline="false"></span> -->
+                        Star
+                    </button>
+                </div>
+                <hr>
+
+            </div>
         </main>
     </div>
+
     <hr class="footer-disector">
+
+    <!-- Footer -->
     <footer class="footer">
         <ul class="footer-items">
             <span class="footer-logo iconify" data-icon="octicon:mark-github-16" data-inline="false"></span>
