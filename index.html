@@ -11,8 +11,8 @@
 <body>
     <div class="overall-container">
         <!-- TOP NAVIGATION -->
-        <nav class="nav">
-            <span class="nav__menu-btn iconify" data-icon="octicon:three-bars-16" data-inline="false"></span>
+        <nav id="nav" class="nav">
+            <span id="menu-btn" class="nav__menu-btn iconify" data-icon="octicon:three-bars-16" data-inline="false"></span>
             <span class="nav__github-logo iconify" data-icon="octicon:mark-github-16" data-inline="false"></span>
             <div class="nav-search-items-container">
                 <div class="search">
@@ -20,13 +20,11 @@
                     <span class="search__key-slash">/</span>
                 </div>
                 <ul class="nav-items">
-                    <!-- <li class="nav-items__dashboard">Dashboard</li> -->
                     <li class="nav-items__pull-requests">Pull requests</li>
                     <li class="nav-items__pulls">Pulls</li>
                     <li class="nav-items__issues">Issues</li>
                     <li class="nav-items__marketplace">Marketplace</li>
                     <li class="nav-items__explore">Explore</li>
-                    <!-- <li class="nav-items__settings">Settings</li> -->
                 </ul>                
             </div> 
             
@@ -35,24 +33,55 @@
                     <span class="iconify" data-icon="octicon:bell-16" data-inline="false"></span>
                 </span>
 
-                <span class="nav__new-btn">
+                <span id="nav-new-btn" class="nav__new-btn">
                     <span class="iconify" data-icon="octicon:plus-16" data-inline="false"></span>
                     <i class="fa fa-caret-down"></i>
+
+                    <!-- new-btn modal -->
+                    <div id="new-btn-modal" class="fade-in modal">        
+                        <i class="fa fa-caret-up"></i>
+                        <ul class="modal-items">
+                            <li>New repository</li>
+                            <li>Import repository</li>
+                            <li>New gist</li>
+                            <li>New organization</li>
+                            <li>New project</li>
+                        </ul>
+                    </div> 
                 </span>
 
-                <span class="nav__avatar-btn">
+                <span id="nav-avatar-btn" class="nav__avatar-btn">
                     <img src="images/naru.jpeg" alt="avatar">
                     <i class="fa fa-caret-down"></i>
+
+                    <!-- new-btn modal -->
+                    <div id="avatar-btn-modal" class="fade-in modal">        
+                        <i class="fa fa-caret-up"></i>
+                        <ul class="modal-items">
+                            <span class="modal__username">Signed in as </span> <p>NARUDESIGNS</p> <hr>
+                            <p class="modal-items__status">Hi, want to get amazed?</p> <hr>
+                            <li>Your profile</li>
+                            <li>Your repositories</li>
+                            <li>Your projects</li>
+                            <li>Your stars</li>
+                            <li>Your gist</li> <hr>
+                            <li>Upgrade</li>
+                            <li>Feature preview</li>
+                            <li>Help</li>
+                            <li>Settings</li>
+                            <li>Sign out</li>
+                        </ul>
+                    </div> 
                 </span>                
             </div>
         </nav>
 
         <!-- mobile nav menu -->
-        <section class="mobile-nav-container">
+        <section id="mobile-nav-menu" class="mobile-nav-container">
             <div class="search mobile-search">
                 <input type="text" class="search__bar mobile-search__bar" placeholder="Search or jump to...">
-                <span class="search__key-slash mobile-search__key-slash">/</span><hr>
-            </div> 
+                <span class="search__key-slash mobile-search__key-slash">/</span>
+            </div> <hr>
 
             <ul class="nav-items mobile-nav-items">
                 <li class="nav-items__dashboard">Dashboard</li>
@@ -74,9 +103,9 @@
         </section>
 
         <!-- MAIN NAVIGATION - Overview | Repositorues | Projects | Packages -->
-        <nav class="main-nav">
+        <nav id="main-nav" class="main-nav">
             <!-- Fading user avatar | username -->
-            <div class="main-nav-user">
+            <div id="main-nav-avatar" class="fade-in main-nav-user">
                 <img src="images/naru.jpeg" alt="user-avatar">
                 <p><strong>NARUDESIGNS</strong></p>
             </div>
@@ -147,8 +176,8 @@
             </div>
 
             <!-- Repositories -->
-            <div class="main-body-repos">
-                <section class="find-repo-filter-container">
+            <div id="main-body-repos" class="main-body-repos">
+                <section id="find-repo-input" class="find-repo-filter-container">
                     <input type="text" class="main__find-repo" placeholder="Find a repository...">
                     <div class="filter-btns-container">
                         <button class="filter-btns type">Type: All <i class="fa fa-caret-down"></i> </button>
@@ -208,7 +237,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -255,7 +283,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -302,7 +329,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -349,7 +375,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -396,7 +421,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -443,7 +467,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -490,7 +513,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -537,7 +559,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
                 <div class="repo-container">
                     <section class="repo">
@@ -584,7 +605,6 @@
                         Star
                     </button>
                 </div>
-                <hr>
 
             </div>
         </main>
