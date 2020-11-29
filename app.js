@@ -13,6 +13,8 @@ const navAvatarBtnDropdown = document.getElementById('avatar-btn-modal');
 const mainNavAvatar = document.getElementById('main-nav-avatar');
 const mainNav = document.getElementById('main-nav');
 
+const profilePhotoStatus = document.getElementById('profile-photo-status');
+
 const findRepoInput = document.getElementById('find-repo-input');
 
 const overallReposContainer = document.getElementById('main-body-repos'); 
@@ -21,9 +23,8 @@ const overallReposContainer = document.getElementById('main-body-repos');
 //------------------------------------------- UI PROCESSING -------------------------------------------
 //Nav menu is clicked
 menuBtn.addEventListener('click', () => {
-    //mobileMenu.style.display = "block";
     mobileMenu.classList.toggle('show');
-})
+}) 
 
 //New Btn '+' symbol is clicked - close other visible modals and show new btn modal
 navNewBtn.addEventListener('click', () => {
@@ -56,6 +57,18 @@ else if(window.outerWidth < 801) {
     findRepoInput.insertAdjacentElement('beforebegin', mainNav);
 }
 
+//adjust profile photo status input
+function profileStatusHover(){
+    let userStatus = profilePhotoStatus.innerText;
+    profilePhotoStatus.innerText = profilePhotoStatus.innerText.split(' ')[0];
+    profilePhotoStatus.addEventListener('mouseover', () => {
+        profilePhotoStatus.innerText = userStatus;
+    })
+    profilePhotoStatus.addEventListener('mouseleave', () => {
+        profilePhotoStatus.innerText = profilePhotoStatus.innerText.split(' ')[0];
+    })
+}
+profileStatusHover();
 
 
 

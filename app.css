@@ -20,15 +20,35 @@
 }
 
 /*--------------- Components ---------------*/
-/* .caret {
-    border: 5px solid var(--white);
-    background: none;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent; 
-    width: 0;
-    height: 0;
-} */
+.tooltip{
+    background-color: var(--dark-grey);
+    color: white;
+    padding: 7px;
+    min-width: 115px;
+    font-size: 11px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    position: absolute;
+    z-index: 12;
+    display: none;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.tooltip-caret {
+    position: absolute;
+    left: 50px;
+    margin-top: -27px;
+    color: var(--dark-grey) !important;
+}
+
 .modal {
     display: none;
 }
@@ -136,6 +156,11 @@ hr {
 a {
     color: var(--dark-grey);
     text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
 }
 
 .iconify {
@@ -415,6 +440,11 @@ a {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    cursor: pointer;
+}
+/* display tool-tip when user overs on photo */
+.profile-photo:hover .tooltip {
+    display: block;
 }
 .profile-photo__status {
     display: flex;
@@ -426,22 +456,32 @@ a {
     background-color: var(--white);
     min-width: 40px;
     min-height: 40px;
+    width: 40px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
     border: 1px solid var(--very-light-grey);
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    overflow: hidden;
     z-index: 11;
+    transition: width 1s ease;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    -ms-transition: width 1s ease;
+    -o-transition: width 1s ease;
+    font-size: 13px;
 }
 .profile-photo__status:hover {
     box-shadow: 0 0 5px rgb(73, 73, 73, 0.2);
     cursor: pointer;
     color: var(--light-blue);
+    width: auto;
+    height: auto;
+    word-break: break-word;
+    white-space: wrap;
+    overflow: visible;
 }
 .profile__name {
     font-size: 26px;
@@ -793,8 +833,8 @@ a {
         width: 15%;
     }
     .profile-photo__status {
-        top: 25%;
-        left: 80%;
+        top: 23%;
+        left: 75%;
     }
 
     .footer-disector{
@@ -817,6 +857,9 @@ a {
 
 /* ==================== Mobile View ==================== */
 @media only screen and (max-width: 800px){
+    .tooltip {
+        display: none !important; 
+    }
     .nav {
         display: flex;
         justify-content: space-between;
@@ -884,11 +927,12 @@ a {
     .mobile-nav-items li {
         padding: 10px 0;
     }
-    .mobile-nav-user {
+    .mobile-nav-user { 
         margin: 0;
         padding: 0;
         width: 100%;
-        visibility: visible;
+        visibility: visible !important;
+        display: flex !important;
     }
     .mobile-nav-user img {
         width: 25px;
