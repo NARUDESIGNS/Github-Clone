@@ -676,7 +676,7 @@ img {
     font-size: 20px;
     color: var(--light-blue) !important;
     margin-bottom: 15px;
-}
+} 
 .repo__name:hover {
     text-decoration: underline;
     cursor: pointer;
