@@ -295,7 +295,7 @@ class Developer {
 
 
 //create new Developer and render data
-const token = ${{ secrets.ACCESS_TOKEN }};
+const token = ACCESS_TOKEN;
 const narudesigns = new Developer(`https://api.github.com/graphql`, 'narudesigns', token);
 narudesigns.renderData();
 
