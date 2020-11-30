@@ -1,4 +1,5 @@
 
+
 class Developer {
     constructor(url, userLogin, token){
         if(!url || !userLogin || !token){
@@ -294,7 +295,8 @@ class Developer {
 
 
 //create new Developer and render data
-const token = "08b4f5b54ce6e59b26d9a5de6e5d669e8bcf20f0";
-
+const token = "a756e316a7869d29820cab31c0cd5d7b65cf2a9a";
 const narudesigns = new Developer(`https://api.github.com/graphql`, 'narudesigns', token);
 narudesigns.renderData();
+
+//console.log(narudesigns.repo[0]);
