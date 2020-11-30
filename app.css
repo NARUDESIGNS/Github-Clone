@@ -352,6 +352,7 @@ img {
     display: flex;
     align-items: center;
     margin-right: 13%;
+    font-weight: 600;
     visibility: hidden;
     /* padding: 10px 0; */
 }
@@ -457,6 +458,7 @@ img {
     min-width: 40px;
     min-height: 40px;
     width: 40px;
+    height: auto;
     white-space: nowrap;
     overflow: hidden;
     border: 1px solid var(--very-light-grey);
@@ -672,7 +674,7 @@ img {
 }
 .repo__name {
     font-size: 20px;
-    color: var(--light-blue);
+    color: var(--light-blue) !important;
     margin-bottom: 15px;
 }
 .repo__name:hover {
@@ -680,10 +682,11 @@ img {
     cursor: pointer;
 }
 .repo__desc {
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 .topics-container {
     display: flex;
+    flex-wrap: wrap;
 }
 .topics-container__topics {
     margin-right: 5px;
@@ -781,6 +784,8 @@ img {
 .footer {
     width: 100%;
     padding: 50px 30px;
+    position: relative;
+    bottom: 0;
     /* border: 2px solid teal; */
 }
 .footer-logo {
@@ -977,8 +982,9 @@ img {
     .profile-photo__status {
         position: unset;
         word-break: break-word;
-        min-width: 25px;
-        min-height: 25px;
+        /* min-width: 25px;
+        min-height: 25px; */
+        width: 100%;
         margin-bottom: 15px;
         border-radius: 5px;
         -webkit-border-radius: 5px;
