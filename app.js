@@ -30,6 +30,8 @@ class Developer {
 
         this.overallReposContainer = document.getElementById('main-body-repos'),
 
+        this.totalReposCount = document.getElementById('no-of-repos');
+
         //--------------------------- Repo UI Process for topics, stars, forks to display or not ---------------------------
         this.repo = document.getElementsByClassName('repo');
         this.topicsContainer = document.getElementsByClassName('topics-container');
@@ -100,6 +102,7 @@ class Developer {
                             url
                             viewerHasStarred
                         }
+                        totalCount
                     }
                 }
             }`
@@ -165,6 +168,7 @@ class Developer {
 
     //process repo data from API
     processRepoData(data){
+        this.totalReposCount = data.repositories.totalCount;
         data = data.repositories.nodes;
         //data.forEach(repo => {
         for(let i = 0; i < data.length; i++){
