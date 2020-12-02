@@ -74,7 +74,7 @@ class Developer {
                     websiteUrl
                     twitterUsername
         
-                    repositories(first: 20, orderBy: {field: UPDATED_AT, direction: DESC}) {
+                    repositories(first: 20, orderBy: {field: CREATED_AT, direction: DESC}) {
                         nodes{
                             name
                             description
@@ -204,6 +204,7 @@ class Developer {
                     </button>
                 </div>
             `;
+            //render all topics
             let allTopics = data[i].repositoryTopics.nodes;
             for(let j = 0; j < allTopics.length; j++){
                 this.topicsContainer[i].innerHTML += `
@@ -295,8 +296,6 @@ class Developer {
 
 
 //create new Developer and render data
-const token = "a756e316a7869d29820cab31c0cd5d7b65cf2a9a";
+const token = "c32fb564806ee1c05636c6ce9b59e873333b37b9";
 const narudesigns = new Developer(`https://api.github.com/graphql`, 'narudesigns', token);
 narudesigns.renderData();
-
-//console.log(narudesigns.repo[0]);

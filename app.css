@@ -88,7 +88,7 @@
     right: 15px;
     color: white;
     font-size: 25px;
-    z-index: 15;
+    z-index: 15 !important;
 }
 .modal__username, 
 .modal__username + p{
@@ -537,17 +537,17 @@ img {
     cursor: pointer;
     /* border: 1px solid lightgray; */
 }
+.followers:hover,
+.following:hover,
+.total-stars:hover {
+    color: var(--light-blue);
+}
 .followers-count,
 .following-count,
 .total-star-count {
     color: var(--dark-grey);
     font-weight: 500;
     margin: 0 5px;
-}
-.followers:hover,
-.following:hover,
-.total-stars:hover {
-    color: var(--light-blue);
 }
 .website-link,
 .twitter-link {
@@ -682,6 +682,7 @@ img {
     cursor: pointer;
 }
 .repo__desc {
+    line-height: 2;
     margin: 15px 0;
 }
 .topics-container {
