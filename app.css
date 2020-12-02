@@ -684,6 +684,7 @@ img {
 .repo__desc {
     line-height: 2;
     margin: 15px 0;
+    font-size: 0.9rem;
 }
 .topics-container {
     display: flex;

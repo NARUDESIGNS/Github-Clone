@@ -168,7 +168,7 @@ class Developer {
 
     //process repo data from API
     processRepoData(data){
-        this.totalReposCount = data.repositories.totalCount;
+        this.totalReposCount.innerText = data.repositories.totalCount;
         data = data.repositories.nodes;
         //data.forEach(repo => {
         for(let i = 0; i < data.length; i++){
