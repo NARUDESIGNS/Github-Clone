@@ -32,7 +32,7 @@ class Developer {
 
         this.totalReposCount = document.getElementById('no-of-repos');
 
-        //--------------------------- Repo UI Process for topics, stars, forks to display or not ---------------------------
+        //--------------------------- Repo UI Elements for topics, stars, forks ---------------------------
         this.repo = document.getElementsByClassName('repo');
         this.topicsContainer = document.getElementsByClassName('topics-container');
         this.starGazers = document.getElementsByClassName('repo-info__stargazers');
@@ -76,7 +76,7 @@ class Developer {
                     websiteUrl
                     twitterUsername
         
-                    repositories(first: 20, orderBy: {field: CREATED_AT, direction: DESC}) {
+                    repositories(first: 20, orderBy: {field: UPDATED_AT, direction: DESC}) {
                         nodes{
                             name
                             description
@@ -187,11 +187,9 @@ class Developer {
                             </span>
 
                             <span class="repo-info__stargazers">
-                                
                             </span>
 
-                            <span class="repo-info__forks">
-                                
+                            <span class="repo-info__forks">    
                             </span>
 
                             <span class="repo-info__update">        
@@ -217,7 +215,8 @@ class Developer {
                 `;
             }
 
-            //display star icon if repo is starred
+            //--------------------------- Repo UI Process for topics, stars, forks to display or not ---------------------------
+            //display star icon if repo is starred else hide it
             if(data[i].stargazerCount > 0){
                 this.starGazers[i].innerHTML += `
                     <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
@@ -225,16 +224,18 @@ class Developer {
                 `;
             }
             else {
-                //this.starGazers[i].style.display = "none !important";
-                //console.log(this.starGazers[i].parentElement.parentElement);
+                this.starGazers[i].style.display = "none";
             }
 
-            //display fork icon if repo is forked
+            //display fork icon if repo is forked else hide it
             if(data[i].forkCount > 0){
                 this.forks[i].innerHTML += `
                     <span class="repo-info__forks-icon iconify" data-icon="octicon:repo-forked-16" data-inline="false"></span>      
                     <p class="repo-info__forks-count">${data[i].forkCount}</p>
                 `;
+            }
+            else {
+                this.forks[i].style.display = "none";
             }
         }
         //})
