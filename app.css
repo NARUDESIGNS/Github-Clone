@@ -922,7 +922,7 @@ img {
         width: 100%;
     }
     .mobile-search__key-slash {
-        top: 30%;
+        display: none;
     }
     .main-nav-user {
         display: none;

@@ -170,7 +170,6 @@ class Developer {
     processRepoData(data){
         this.totalReposCount.innerText = data.repositories.totalCount;
         data = data.repositories.nodes;
-        //data.forEach(repo => {
         for(let i = 0; i < data.length; i++){
             this.overallReposContainer.innerHTML += `
                 <div class="repo-container">
@@ -224,6 +223,10 @@ class Developer {
                     <span class="repo-info__stargazers-icon iconify" data-icon="octicon:star-16" data-inline="false"></span>      
                     <p class="repo-info__stargazers-count">${data[i].stargazerCount}</p>
                 `;
+            }
+            else {
+                //this.starGazers[i].style.display = "none !important";
+                //console.log(this.starGazers[i].parentElement.parentElement);
             }
 
             //display fork icon if repo is forked
