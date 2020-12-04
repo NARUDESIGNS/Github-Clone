@@ -911,6 +911,7 @@ img {
         background-color: var(--dark-grey);
         padding: 0 var(--sm-space);
         padding-bottom: var(--sm-space);
+        margin-top: -2px;
         display: none;
     }
     .mobile-nav-container hr {
@@ -981,8 +982,8 @@ img {
         /* border: 1px solid orange; */
     }
     .profile-photo img {
-        margin: 0;
-        width: 100%;
+        margin-top: 5px;
+        width: 80%;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -1010,6 +1011,9 @@ img {
     .profile-photo, .profile-info{
         display: inline-block;
         vertical-align: middle;
+    }
+    .profile-info {
+        margin-left: -15px;
     }
 
     .find-repo-filter-container {
@@ -1043,5 +1047,24 @@ img {
 @media only screen and (max-width: 600px) {
     .main-nav-items :first-child {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .profile-photo {
+        width: 60%;
+    }
+    .profile__name {
+        font-size: 22px;
+    }
+    .profile__username {
+        font-size: 18px;
+    }
+    .filter-btns {
+        padding: 9px 5px;
+        font-size: 11px;
+    }
+    .filter-btns i {
+        margin-left: 5px;
     }
 }
