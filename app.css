@@ -142,9 +142,9 @@ body {
 }
 
 /* set max screen */
-.overall-container {
-    max-width: 1280px;
-}
+/* .overall-container {
+    max-width: 1980px;
+} */
 
 hr {
     outline: none;
@@ -344,7 +344,7 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(219, 219, 219);
     padding: 0 var(--general-indent);
     background-color: var(--white);
     z-index: 5;
@@ -746,8 +746,8 @@ img {
     cursor: pointer;
 }
 .repo-info__language-color {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     background-color: rgb(255, 230, 0);
     border-radius: 50%;
     -webkit-border-radius: 50%;
