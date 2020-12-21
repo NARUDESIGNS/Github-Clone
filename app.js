@@ -238,7 +238,6 @@ class Developer {
                 this.forks[i].style.display = "none";
             }
         }
-        //})
 
         //Date Formater
         function formatDate(date){
@@ -304,6 +303,7 @@ class Developer {
 
 
 //create new Developer and render data
+//this token is a sample token, replace with your own token
 const token = "c32fb564806ee1c05636c6ce9b59e873333b37b9";
 const narudesigns = new Developer(`https://api.github.com/graphql`, 'narudesigns', token);
 narudesigns.renderData();
