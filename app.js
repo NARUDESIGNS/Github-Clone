@@ -304,6 +304,6 @@ class Developer {
 
 //create new Developer and render data
 //this token is a sample token, replace with your own token
-const token = "c32fb564806ee1c05636c6ce9b59e873333b37b9";
+const token = "bcdb9ecb701439830abf63b0a725dd6aa0d40fdb";
 const narudesigns = new Developer(`https://api.github.com/graphql`, 'narudesigns', token);
 narudesigns.renderData();
