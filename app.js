@@ -126,6 +126,7 @@ class Developer {
             this.processProfileData(data.data.user);
         })
         .catch(error => {
+            document.querySelector('.main-body').style.visibility = "hidden";
             console.log(error); 
             alert('failed to fetch user data!, please check your internet connection');
         })
@@ -288,7 +289,7 @@ class Developer {
 
         //display main nav avatar on a particular scroll height
         window.addEventListener('scroll', (e) => {
-            window.scrollY > 340 ? this.mainNavAvatar.classList.add('visible') : this.mainNavAvatar.classList.remove('visible');
+            window.scrollY > 360 ? this.mainNavAvatar.classList.add('visible') : this.mainNavAvatar.classList.remove('visible');
         })
 
         //readjust main nav for non-desktop screens
